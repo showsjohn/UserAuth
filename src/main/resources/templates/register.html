@@ -3,27 +3,24 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<h2>Register</h2>
+
 
 <form action="/register" method="POST">
 
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required><br><br>
+    <h2>Sign Up To Continue</h2>
+    <input type="text" id="firstName" name="firstName" required placeholder="First Name"><br><br>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" required><br><br>
+    <input type="text" id="lastName" name="lastName" required placeholder="Last Name"><br><br>
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
+    <input type="text" id="username" name="username" required placeholder="Username"><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <input type="email" id="email" name="email" required placeholder="Email"><br><br>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-
+    <input type="password" id="password" name="password" required placeholder="Password"><br><br>
+    <hr>
     <button type="submit">Register</button>
 </form>
 </body>
